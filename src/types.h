@@ -181,11 +181,11 @@ constexpr bool is_decisive(Value value) { return is_win(value) || is_loss(value)
 // In the code, we make the assumption that these values
 // are such that non_pawn_material() can be used to uniquely
 // identify the material on the board.
-constexpr Value PawnValue   = 208;
-constexpr Value KnightValue = 781;
-constexpr Value BishopValue = 825;
-constexpr Value RookValue   = 1276;
-constexpr Value QueenValue  = 2538;
+constexpr Value PawnValue   = 208;      // 1
+constexpr Value KnightValue = 624;      // 3
+constexpr Value BishopValue = 1040;     // 5 (как ладья, но можно 1200)
+constexpr Value RookValue   = 832;      // 4 (меньше, чем слон)
+constexpr Value QueenValue  = 1872;     // 9
 
 
 // clang-format off
